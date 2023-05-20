@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Aggiungi contatti telefonici</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="Rubrica.css" /> <!--PERCORSO FILE CSS-->
+    <script src="Rubrica.js"></script> <!--PERCORSO FILE JAVASCRIPT-->
+  </head>
+  <body>
+    <header>
+      <h1>
+        Elenco Contatti
+        <img
+          src="https://i.ibb.co/x50wtLw/pngwing-com.png"
+          alt=""
+          width="34px"
+        />
+      </h1>
+    </header>
+    <main class="container">
+      <!-- AGGIUNGI CONTATTI -->
+      <div class="add-container">
+        <label for="name">Aggiungi nuovo contatto</label>
+        <div class="addInputs">
+          <input
+            type="text"
+            id="name"
+            placeholder="Nome Contatto"
+            required
+          />
+          <input
+            type="text"
+            id="number"
+            placeholder="Numero Contatto"
+            maxlength="10"
+            required
+          />
+        </div>
+        <button type="submit" id="addContact" onclick="addContact()">
+          Invia
+        </button>
+        <p id="displayNoti"></p>
+      </div>
+
+      <!-- OTTIENI CONTATTI -->
+      <div class="get-container">
+        <label for="getContact">Ottenere Dettagli Contatto</label>
+        <div class="getInputs">
+          <input
+            type="text"
+            id="getContactName"
+            placeholder="Nome Contatto"
+            required
+          />
+          <button type="submit" id="getContact" onclick="getContact()">
+            Ottieni Dettagli
+          </button>
+        </div>
+        <p id="displayContact"></p>
+        <div class="reset" onclick="reset()">Reset</div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <a href="https://www.instagram.com/danygry"> Development by Daniele Grilli</a>
+    </footer>
+  </body>
+</html>
